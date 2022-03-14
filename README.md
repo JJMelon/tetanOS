@@ -1,5 +1,5 @@
-# RUSTDOS
-This is the repo for RUSTDOS, a group project building an MS-DOS Clone using as much Rust as possible for the CMU Course 98-008: Shilling The Rust Programming Language.
+# TetanOS
+This is the repo for TetanOS, a group project building an MS-DOS Clone using as much Rust as possible for the CMU Course 98-008: Shilling The Rust Programming Language.
 
 ## Bootloader:
 
