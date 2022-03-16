@@ -1,3 +1,6 @@
+[build]
+target = "target/.rustc_info.json"
+
 [target.'cfg(target_os = "linux")']
 rustflags = ["-C", "link-arg=-nostartfiles"]
 
@@ -8,4 +11,5 @@ rustflags = ["-C", "link-args=/ENTRY:_start /SUBSYSTEM:console"]
 rustflags = ["-C", "link-args=-e __start -static -nostartfiles"]
 
 [unstable]
+build-std-features = ["compiler-builtins-mem"]
 build-std = ["core", "compiler_builtins"]
