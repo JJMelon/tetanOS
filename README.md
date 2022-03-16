@@ -13,4 +13,4 @@ Requires two stages:
 - A simple operating system written in rust https://os.phil-opp.com/
 - Advanced MSDOS Programming 2nd Edition
 - Course notes from CMU Course 15-410: Operating System Design and Implementation https://www.cs.cmu.edu/~410-s07/p4/p4-boot.pdf
-- Working Rust i386 Bootloader https://github.com/M4tsuri/Orusts
+-(Mostly) Rust Bootloader from phil-op https://github.com/rust-osdev/bootloader/tree/rewrite
