@@ -3,6 +3,10 @@ This is the repo for TetanOS, a group project building an MS-DOS Clone using as 
 
 ## Bootloader:
 
+Requires two stages: 
+- Tiny Stage0 just Loads larger Stage1 
+- Stage 1 enters protected mode, prepares system for kernel, then loads the kernel.
+
 ## Kernel:
 
 ## References:
