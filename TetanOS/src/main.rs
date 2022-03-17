@@ -1,6 +1,10 @@
 #![no_std]
 #![no_main]
 
+use core::panic::PanicInfo;
+
+mod vga_buffer;
+
 static HELLO: &[u8] = b"Hello World!";
 
 // Taken from https://os.phil-opp.com/minimal-rust-kernel/#building-our-kernel
@@ -20,7 +24,6 @@ pub extern "C" fn _start() -> ! {
     loop {}
 }
 
-use core::panic::PanicInfo;
 
 #[panic_handler]
 fn panic(_info: &PanicInfo) -> ! {
