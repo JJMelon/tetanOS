@@ -1,7 +1,12 @@
 [package]
-name = "TetanOS"
+name = "tetan_os"
 version = "0.1.0"
-edition = "2018"
+edition = "2021" # TODO: maybe change
+authors = [
+          "Makoto Tomokiyo <mtomokiy@andrew.cmu.edu>",
+          "David Barajas <dbarajas@andrew.cmu>",
+          "Alby Penney <apenney@andrew.cmu.edu>"
+          ]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -23,5 +28,13 @@ version = "1.0"
 features = ["spin_no_std"]
 
 [package.metadata.bootimage]
-test-args = ["-device", "isa-debug-exit,iobase=0xf4,iosize=0x04"]
+test-args = [
+    "-device", "isa-debug-exit,iobase=0xf4,iosize=0x04", "-serial", "stdio",
+    "-display", "none"
+]
 test-success-exit-code = 33
+# test-timeout-300
+
+[[test]]
+name = "should_panic"
+harness = false
