@@ -1,0 +1,1 @@
+{"rustc":11736770940955251025,"features":"","target":0,"profile":0,"path":0,"deps":[[16955436592948485860,"build_script_build",false,7747809032113708429]],"local":[{"RerunIfChanged":{"output":"x86_64-tetanos/debug/build/compiler_builtins-1eabdc42c4753735/output","paths":["build.rs"]}}],"rustflags":[],"metadata":0,"config":0,"compile_kind":0}

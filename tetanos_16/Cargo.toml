@@ -1,0 +1,18 @@
+[package]
+name = "tetanos_16"
+version = "0.1.0"
+edition = "2021"
+authors = [
+  "Makoto Tomokiyo   <mtomokiy@andrew.cmu.edu>",
+  "David Barajas     <dbarjas@andrew.cmu.edu>",
+  "Alby Penney       <apenney@andrew.cmu.edu>"
+  ]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
+
