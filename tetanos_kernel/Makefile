@@ -7,3 +7,11 @@ all: boot.asm kern.asm
 	
 qemu:
 	qemu-system-i386 -fda disk.img
+
+clean:
+	rm *.bin *.img
+
+# example compilation of small executable
+# -O2 for smaller file size, -c to not link
+# call strip afterwards on ctest.o
+# gcc -s -fno-asynchronous-unwind-tables -O2 -c -o ctest.o ctest.c

@@ -18,7 +18,7 @@ boot:
     mov ds,ax       ; clear ds and es registers
     mov es,ax       ; since they might have nonzero values
     mov ss,ax       ; move stack to a safe place
-    mov sp,0x8000   ; want SS:SP to be 0x8000:0x0000
+    mov sp,0x8000   ; want SS:SP to be 0x0000:0x8000
     mov dh,17       ; read 17 sectors of kernel
     mov bx,0x9000   ; ES:BX is where kernel is loaded
 
