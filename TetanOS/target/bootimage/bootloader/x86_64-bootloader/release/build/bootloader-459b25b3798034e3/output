@@ -1,0 +1,7 @@
+cargo:rerun-if-changed=/Users/dbjasso/Documents/Projects/tetanOS/TetanOS/Cargo.toml
+cargo:rustc-link-search=native=/Users/dbjasso/Documents/Projects/tetanOS/TetanOS/target/bootimage/bootloader/x86_64-bootloader/release/build/bootloader-459b25b3798034e3/out
+cargo:rustc-link-lib=static=kernel_bin-tetan_os
+cargo:rerun-if-env-changed=KERNEL
+cargo:rerun-if-env-changed=KERNEL_MANIFEST
+cargo:rerun-if-changed=/Users/dbjasso/Documents/Projects/tetanOS/TetanOS/target/target/debug/tetan_os
+cargo:rerun-if-changed=build.rs
