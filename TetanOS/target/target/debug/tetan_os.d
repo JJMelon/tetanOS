@@ -1,1 +1,0 @@
-/Users/dbjasso/Documents/Projects/tetanOS/TetanOS/target/target/debug/tetan_os: /Users/dbjasso/Documents/Projects/tetanOS/TetanOS/src/main.rs /Users/dbjasso/Documents/Projects/tetanOS/TetanOS/src/vga_buffer.rs
