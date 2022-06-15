@@ -9,6 +9,7 @@ Requires two stages:
 - USES bootloader crate
 
 ## Kernel:
+TODO: create BIOS assembly API, statically link with kernel code 
 
 ## References:
 - A simple operating system written in rust https://os.phil-opp.com/

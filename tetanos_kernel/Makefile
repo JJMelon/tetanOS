@@ -15,3 +15,7 @@ clean:
 # -O2 for smaller file size, -c to not link
 # call strip afterwards on ctest.o
 # gcc -s -fno-asynchronous-unwind-tables -O2 -c -o ctest.o ctest.c
+# (possibly) ld -e _main -static ctest.o -o ctest
+# -e specifies entry point
+# -static means no link against library (i think)
+# xxd -seek 0x110 ctest.o to confirm that text segment for ctest.c starts at address 0x110

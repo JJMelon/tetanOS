@@ -4,4 +4,5 @@ int main () {
   for (int i = 0; i < x; i++) {
     result = result + 2;
   }
+  return result + x;
 }
